@@ -1,0 +1,10 @@
+{
+  "graphs": {
+    "langgraph_agente": "agent:app"
+  },
+  "python_version": "3.13",
+  "env": "./.env",
+  "dependencies": [
+    "."
+  ]
+}

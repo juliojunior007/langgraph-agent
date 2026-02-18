@@ -1,0 +1,30 @@
+[project]
+name = "langgraph-agent-v"
+version = "0.1.0"
+description = "Agente de atendimento com LangGraph"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    # Core
+    "pydantic>=2.12.5",
+    "python-dotenv>=1.2.1",
+    "streamlit>=1.54.0",
+    
+    # LangChain e LangGraph (fixados na versão 0.3.x para estabilidade)
+    "langchain>=0.3.27,<0.4.0",
+    "langchain-community>=0.3.27,<0.4.0",
+    "langchain-openai>=0.3.27,<0.4.0",
+    "langchain-core>=0.3.27,<0.4.0",
+    "langgraph>=0.6.10",
+    
+    # OpenAI
+    "openai>=1.106.1",
+    
+    # Qdrant (para uso futuro)
+    "qdrant-client>=1.15.1",
+    "langchain-qdrant>=0.2.1",
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"

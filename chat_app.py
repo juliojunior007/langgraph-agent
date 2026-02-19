@@ -1,5 +1,5 @@
 import streamlit as st
-from agent import app  # Importa o grafo compilado do agent.py
+from src.graph import app  # Importa o grafo compilado do agent.py
 from langchain_core.messages import HumanMessage, AIMessage
 
 import warnings

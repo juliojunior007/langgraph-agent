@@ -4,11 +4,11 @@ from typing import Literal
 class InitialRouter(BaseModel):
     next_node: Literal["receptionist", "classifier"] = Field(
         ...,
-        description="Choose 'classifier' if the user presents a clear technical or financial question. Otherwise, choose 'receptionist'.",
+        description="Escolha 'classifier' se a mensagem for sobre narcisismo ou pedido de ajuda. Caso contrário, 'receptionist' para saudações.",
     )
 
 class MessageClassifier(BaseModel):
-    message_type: Literal["technical", "financial"] = Field(
+    message_type: Literal["identificacao", "apoio"] = Field(
         ...,
-        description="Classify the message as 'technical' or 'financial'.",
+        description="Classifique como 'identificacao' (perguntas sobre sinais, características) ou 'apoio' (pedidos de ajuda emocional, como sair).",
     )

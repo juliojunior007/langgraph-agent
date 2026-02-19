@@ -10,12 +10,10 @@ def classify_message(state: State):
     result = classifier_llm.invoke([
         {
             "role": "system",
-            "content": """Classify the user message as either:
-            - 'technical': if it asks for technical support, internet issues,
-              message error, login problems, or any technical assistance
-            - 'financial': if it asks for financial information, prices,
-              billing, or payment issues
-            """,
+            "content": """Você é um classificador empático. Classifique a mensagem em:
+            - 'identificacao': se a pessoa quer entender o que é narcisismo, sinais de abuso, características.
+            - 'apoio': se a pessoa está sofrendo, pedindo ajuda, como lidar, como sair.
+            Seja sensível e não julgue.""",
         },
         {"role": "user", "content": last_message.content},
     ])

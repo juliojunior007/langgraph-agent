@@ -1,3 +1,3 @@
 import pytest
-from src.graph import app
+from graph.graph import app
 # ... testes de integração

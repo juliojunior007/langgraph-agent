@@ -1,6 +1,6 @@
 {
   "graphs": {
-    "customer_service_agent": "src.graph:app"
+    "customer_service_agent": "graph.graph:app"
   },
   "python_version": "3.13",
   "env": "./.env",

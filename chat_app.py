@@ -1,5 +1,5 @@
 import streamlit as st
-from src.graph import app
+from graph.graph import app
 from langchain_core.messages import HumanMessage, AIMessage
 import warnings
 

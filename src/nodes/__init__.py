@@ -3,6 +3,9 @@ from .receptionist import receptionist_agent
 from .classifier import classify_message
 from .identificacao import identificacao_agent
 from .apoio import apoio_agent
+from .defesa import defesa_agent
+from .soberania import soberania_agent
+from .autocuidado import autocuidado_agent
 
 __all__ = [
     "route_initial_message",
@@ -10,4 +13,7 @@ __all__ = [
     "classify_message",
     "identificacao_agent",
     "apoio_agent",
+    "defesa_agent",
+    "soberania_agent",
+    "autocuidado_agent",
 ]

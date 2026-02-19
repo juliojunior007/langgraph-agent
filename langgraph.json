@@ -1,6 +1,6 @@
 {
   "graphs": {
-    "langgraph_agente": "agent:app"
+    "customer_service_agent": "src.graph:app"
   },
   "python_version": "3.13",
   "env": "./.env",

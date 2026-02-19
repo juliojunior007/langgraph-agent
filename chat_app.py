@@ -1,7 +1,6 @@
 import streamlit as st
 from src.graph import app  # Importa o grafo compilado do agent.py
 from langchain_core.messages import HumanMessage, AIMessage
-
 import warnings
 warnings.filterwarnings("ignore", category=UserWarning, module="pydantic")
 # Título da aplicação

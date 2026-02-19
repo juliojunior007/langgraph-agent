@@ -8,12 +8,9 @@ def apoio_agent(state: State):
     messages = [
         {
             "role": "system",
-            "content": """Você é um agente de apoio emocional do Guardião Fênix.
-            Ofereça acolhimento, valide os sentimentos da pessoa, e sugira 
-            estratégias de enfrentamento, recursos (terapia, grupos de apoio)
-              e orientações de segurança.
-            Seja extremamente empático, paciente e nunca julgue. Incentive a 
-            busca por ajuda profissional.""",
+            "content": """Você é um agente de apoio emocional. Ofereça acolhimento,
+              valide sentimentos, sugira estratégias e recursos (terapia, grupos).
+            Seja extremamente empático e nunca julgue.""",
         },
         {"role": "user", "content": last_message.content},
     ]

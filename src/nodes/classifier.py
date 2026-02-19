@@ -10,10 +10,10 @@ def classify_message(state: State):
     result = classifier_llm.invoke([
         {
             "role": "system",
-            "content": """Você é um classificador empático. Classifique a mensagem em:
-            - 'identificacao': se a pessoa quer entender o que é narcisismo, sinais de abuso, características.
-            - 'apoio': se a pessoa está sofrendo, pedindo ajuda, como lidar, como sair.
-            Seja sensível e não julgue.""",
+            "content": """Classifique a mensagem em:
+            - 'identificacao': quer entender sinais, características do narcisismo.
+            - 'apoio': está sofrendo, pedindo ajuda, como lidar, como sair.
+            Seja sensível.""",
         },
         {"role": "user", "content": last_message.content},
     ])

@@ -10,11 +10,11 @@ def route_initial_message(state: State):
     result = router_llm.invoke([
         {
             "role": "system",
-            "content": """You are an expert at routing user messages.
-                If the message is a simple greeting, a thank you, or conversational fluff,
-                route to the 'receptionist'.
-                If the message contains a specific question or problem about technical
-                or financial issues, route to the 'classifier'.""",
+            "content": """Você é um especialista em rotear mensagens para
+              o Guardião Fênix.
+            Se for saudação (oi, olá, bom dia) → 'receptionist'.
+            Se falar sobre relacionamento, narcisismo, abuso, ou pedir ajuda →
+              'classifier'.""",
         },
         {"role": "user", "content": last_message.content},
     ])
